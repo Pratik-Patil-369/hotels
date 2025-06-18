@@ -10,12 +10,13 @@ require("dotenv").config();
 // const mongoURL =
 //   "mongodb+srv://patil150pratik:<myXiPgYWgNzYFwXK>@cluster0.xml8zcl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-// const mongoURL = process.env.MONGODB_URL_LOCAL;
-const mongoURL = process.env.MONGODB_URL;
+const mongoURL = process.env.MONGODB_URL_LOCAL;
+// const mongoURL = process.env.MONGODB_URL;
 //Set up MongoDB connection
-mongoose.connect(mongoURL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true});
+mongoose.connect(mongoURL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 //Get the default connection
 //Mongoose maintains a default connection object repesenting the MongoDB connection
